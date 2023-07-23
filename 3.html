@@ -1,48 +1,79 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-P7VXY1B4V3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-P7VXY1B4V3');
-</script>
+<head>
     <title>WEB1-javascript</title>
     <meta charset="utf-8">
+    <style>
+        body {
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+
+        }
+
+        h1 {
+            font-size: 45px;
+            text-align: center;
+            border-bottom: solid 1px gray;
+            margin: 0;
+            padding: 20px;
+        }
+
+        ol {
+            border-right: 1px solid gray;
+            width: 100px;
+            margin: 0;
+            padding: 20px;
+        }
+
+        #grid {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+        }
+
+        #grid ol {
+            padding-left: 33px;
+        }
+
+        #grid #ARTICLE {
+            padding-left: 30px;
+        }
+
+        @media(max-width:800px) {
+            #grid {
+                display: block;
+            }
+
+            ol {
+                border-right: none;
+            }
+
+            h1 {
+                border-bottom: none;
+            }
+        }
+    </style>
 </head>
+
 <body>
     <h1><a href="index.html">WEB</h1></a>
-    <ol>
-        <li><a href="1.html">html</li></a>
-        <li><a href="2.html">css</li></a>
-        <li><a href="3.html">javascript</li></a>
-    </ol>
-    <u><a href="https://namu.wiki/w/JavaScript"> JavaScript</a></u>는 <strong>개발자가 대화식 웹 페이지를 만들기 위해 사용하는 프로그래밍 언어입니다.</strong> 소셜 미디어 피드 새로 고침부터 애니메이션 및 대화형 지도 표시에 이르기까지, <u><a href="https://namu.wiki/w/JavaScript"> JavaScript</a></u> 기능은 웹사이트의 사용자 경험을 개선할 수 있습니다.
-    <ul><img src="javascript image.png"></ul> 클라이언트 측 스크립팅 언어로서 JavaScript는 월드 와이드 웹의 핵심 기술 중 하나입니다. 예를 들어 인터넷 탐색 시 웹페이지에서 이미지 슬라이드쇼, 클릭하면 표시되는 드롭 다운 메뉴 또는 객체 색상의 동적 변화를 보게 된다면 이는 JavaScript의 효과를 보는 것입니다.
-
-    <p>
-        <div id="disqus_thread"></div>
-    <script>
-        /**
-        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-        /*
-        var disqus_config = function () {
-        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-        };
-        */
-        (function() { // DON'T EDIT BELOW THIS LINE
-        var d = document, s = d.createElement('script');
-        s.src = 'https://web1-4hxsotqljk.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    </p>
+    <div id="grid">
+        <ol>
+            <li><a href="1.html">html</li></a>
+            <li><a href="2.html">css</li></a>
+            <li><a href="3.html">javascript</li></a>
+        </ol>
+        <div id="ARTICLE">
+            <h2><a href="https://namu.wiki/w/JavaScript"> JavaScript</a></h2>는 개발자가 대화식 웹 페이지를 만들기 위해 사용하는 프로그래밍
+            언어입니다. 소셜 미디어 피드 새로 고침부터 애니메이션 및 대화형 지도 표시에 이르기까지, <a href="https://namu.wiki/w/JavaScript">
+                JavaScript</a> 기능은 웹사이트의 사용자 경험을 개선할 수 있습니다.
+            클라이언트 측 스크립팅 언어로서 JavaScript는 월드 와이드 웹의 핵심 기술 중 하나입니다. 예를 들어 인터넷 탐색 시 웹페이지에서 이미지 슬라이드쇼, 클릭하면 표시되는 드롭 다운 메뉴
+            또는 객체 색상의 동적 변화를 보게 된다면 이는 JavaScript의 효과를 보는 것입니다.
+        </div>
+    </div>
 </body>
+
 </html>
